@@ -21,6 +21,7 @@ app.use(cors());
 
  app.get('/students', (req, res)=> {
   let data = [{id:54,name:'mike'},{id:120,name:'Tony'}]
+  res.send(data)
  })
 
 app.listen(PORT, () => {
