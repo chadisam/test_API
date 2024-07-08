@@ -15,6 +15,9 @@ const app = express();
 const PORT = process.env.PORT || 3030;
 app.use(cors());
 
+ app.get('/', function (req, res) {
+  res.send('Hello World')
+ })
 // your code
 
 app.listen(PORT, () => {
