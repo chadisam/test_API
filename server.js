@@ -15,10 +15,13 @@ const app = express();
 const PORT = process.env.PORT || 3030;
 app.use(cors());
 
- app.get('/', function (req, res) {
+ app.get('/',  (req, res) =>{
   res.send('Hello World')
  })
-// your code
+
+ app.get('/students', (req, res)=> {
+  let data = [{id:54,name:'mike'},{id:120,name:'Tony'}]
+ })
 
 app.listen(PORT, () => {
   console.log(`server started on port ${PORT}`);
